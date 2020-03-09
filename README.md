@@ -12,6 +12,8 @@ Currently the app only does one specific thing: Convert Glyphs clipboard content
 2. Copy shapes in Glyphs.app
 3. Paste somewhere that accepts SVG, for example Figma
 
+<img src="https://raw.githubusercontent.com/rsms/TypoFig/master/glyphs-svg-clipboard-demo.gif" width="606" height="497">
+
 The app observed the clipboard and when it seems Glyphs content, it attempts to
 convert it into SVG and then adds the SVG to the clipboard.
 When the app finds Glyphs content and converts it, it bounces its app icon in the Dock.
