@@ -1,6 +1,8 @@
 # TypoFig
 
-A macOS app which converts Glyphs.app glyph shapes in the clipboard to SVG.
+Small Mac app for assisting with typography design in Figma.
+
+Currently the app only does one specific thing: Convert Glyphs clipboard contents to SVG.
 
 1. Start the app
 2. Copy shapes in Glyphs.app
