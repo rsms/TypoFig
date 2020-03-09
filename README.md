@@ -2,6 +2,8 @@
 
 Small Mac app for assisting with typography design in Figma.
 
+[→ Download](https://github.com/rsms/TypoFig/releases/latest)
+
 Currently the app only does one specific thing: Convert Glyphs clipboard contents to SVG.
 
 1. Start the app
