@@ -12,7 +12,7 @@ Currently the app only does one specific thing: Convert Glyphs clipboard content
 2. Copy shapes in Glyphs.app
 3. Paste somewhere that accepts SVG, for example Figma
 
-<img src="https://raw.githubusercontent.com/rsms/TypoFig/master/glyphs-svg-clipboard-demo.gif" width="606" height="497">
+<img src="https://raw.githubusercontent.com/rsms/TypoFig/master/glyphs-svg-clipboard-demo.gif" width="606">
 
 The app observes the clipboard. When it sees some Glyphs content it attempts to
 convert it into SVG and then adds the SVG to the clipboard.
