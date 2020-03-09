@@ -18,7 +18,7 @@ static NSString* glyphsAppGlyphPBUTI;
   // Glyphs uses a dynamic UTI for writing pasteboard data.
   // Get its dynamic UTI.
   glyphsAppGlyphPBUTI = (NSString*)CFBridgingRelease(UTTypeCreatePreferredIdentifierForTag(kUTTagClassNSPboardType, CFSTR("Glyphs elements pasteboard type"), kUTTypeData));
-  NSLog(@"glyphsAppGlyphPBUTI: %@", glyphsAppGlyphPBUTI);
+  //NSLog(@"glyphsAppGlyphPBUTI: %@", glyphsAppGlyphPBUTI);
 
   [self pollPasteboard];
 }
@@ -36,11 +36,11 @@ static NSString* glyphsAppGlyphPBUTI;
 
 
 - (void)checkPasteboard:(NSPasteboard*)pb {
-  NSLog(@"pb %@", pb);
+  //NSLog(@"pb %@", pb);
   for (NSPasteboardItem* item in pb.pasteboardItems) {
-    NSLog(@"item %@", item);
+    //NSLog(@"item %@", item);
     for (NSPasteboardType type in item.types) {
-      NSLog(@"  type %@", type);
+      //NSLog(@"  type %@", type);
       
       if ([type isEqualToString:glyphsAppGlyphPBUTI]) {
         id plist = [item propertyListForType:type];
@@ -68,7 +68,7 @@ typedef struct {
 
 
 - (void)handleGlyphsAppGlyphPBData:(NSDictionary*)d pb:(NSPasteboard*)pb {
-  NSLog(@"    d %@", d);
+  //NSLog(@"    d %@", d);
   
   double __block minX = 99999999999, maxX = -99999999999, minY = 99999999999, maxY = -99999999999;
   
@@ -101,7 +101,7 @@ typedef struct {
     for (auto i = lastIndex; i >= 0; i--) {
       auto n = getNode(i);
       
-      NSLog(@"%f, %f, %@", n.x, n.y, n.op);
+      //NSLog(@"%f, %f, %@", n.x, n.y, n.op);
       
       if (i == 0) {
         [commands addObject:[NSString stringWithFormat:@"M %.10g %.10g", n.x, n.y]];
